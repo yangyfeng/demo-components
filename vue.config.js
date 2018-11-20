@@ -1,3 +1,8 @@
+const webpack = require('webpack')
+const path = require('path')
+function resolve (dir) {
+  return path.join(__dirname, dir)
+}
 module.exports = {
   /* vue-cli3 项目配置文件 */
 
@@ -29,7 +34,7 @@ module.exports = {
     filename: 'index.html'
   }
   */
-  pages: { type: Object, Default: undefined },
+  // pages: { type: Object, Default: undefined },
 
   // 用于放置生成的静态资源 (js、css、img、fonts) 的；（项目打包之后，静态资源会放在这个文件夹下
   assetsDir: 'assets',
@@ -91,7 +96,14 @@ module.exports = {
     }
   }
   */
-  configureWebpack: () => {},
+  configureWebpack: {
+    plugins: [
+      new webpack.ProvidePlugin({
+        jQuery: 'jquery',
+        $: 'jquery'
+      })
+    ]
+  },
 
   // css相关配置
   css: {
@@ -117,7 +129,7 @@ module.exports = {
   // See https://github.com/vuejs/vue-cli/blob/dev/docs/cli-service.md#configuring-proxy
   devServer: {
     // 主机名
-    host: process.env.HOST || 'localhost',
+    // host: process.env.HOST || 'localhost',
     // 端口号
     port: process.env.PORT || 8080,
     // 是否支持https安全访问

@@ -4,10 +4,14 @@
 </template>
 
 <script>
+import $ from 'jquery'
 import HotKey from './components/HotKey'
 export default {
   components: {
     HotKey
+  },
+  mounted () {
+    console.log($('.app'))
   }
 }
 </script>
