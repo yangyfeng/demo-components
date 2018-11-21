@@ -1,17 +1,23 @@
 <template lang="pug">
   .app
     HotKey
+    Datepicker
+    FileUpload
 </template>
 
 <script>
-import $ from 'jquery'
 import HotKey from './components/HotKey'
+import FileUpload from './components/FileUpload'
+import Datepicker from './components/Datepicker'
 export default {
-  components: {
-    HotKey
+  data () {
+    return {
+    }
   },
-  mounted () {
-    console.log($('.app'))
+  components: {
+    HotKey,
+    Datepicker,
+    FileUpload
   }
 }
 </script>
