@@ -54,7 +54,7 @@ export default {
 </script>
 <style lang="less" scoped>
   .fileupload {
-    width: 400px;
+    width: 100%;
     height:100px;
     background: #eeeeee;
     display: flex;

@@ -34,7 +34,7 @@ h3 {
 }
 input {
   display: block;
-  width: 400px;
+  width: 100%;
   height: 25px;
   line-height: 25px;
 }

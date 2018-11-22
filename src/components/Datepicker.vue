@@ -22,6 +22,6 @@ export default {
 
 <style lang="less" scoped>
   .date {
-    width: 400px;
+    width: 100%;
   }
 </style>

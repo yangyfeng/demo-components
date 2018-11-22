@@ -1,20 +1,26 @@
 <template lang="pug">
   .app
-    .item
-      h1.title 1、快捷键
-      HotKey
-    .item
-      h1.title 2、时间选择器
-      Datepicker
-    .item
-      h1.title 3、文件上传(拖拽)
-      FileUpload
+    .components
+      .title Vue2.0+组件库总结
+      Components
+    .demo
+      .title 组件demo
+      .item
+        .demo-title 1、快捷键
+        HotKey
+      .item
+        .demo-title 2、时间选择器
+        Datepicker
+      .item
+        .demo-title 3、文件上传(拖拽)
+        FileUpload
 </template>
 
 <script>
 import HotKey from './components/HotKey'
 import FileUpload from './components/FileUpload'
 import Datepicker from './components/Datepicker'
+import Components from './page/VueComponents'
 export default {
   data () {
     return {
@@ -23,7 +29,8 @@ export default {
   components: {
     HotKey,
     Datepicker,
-    FileUpload
+    FileUpload,
+    Components
   }
 }
 </script>
@@ -189,16 +196,23 @@ a {
 .app {
   width: auto;
   margin: 20px;
+  .title {
+    height: 30px;
+    line-height: 30px;
+    font-size: 30px;
+    font-weight: bold;
+    margin: 10px 0;
+  }
 }
 .item {
   width: 100%;
   height: auto;
   margin: 10px 0;
 }
-h1.title {
-  font-size: 20px;
-  height: 25px;
-  line-height: 25px;
+.demo-title {
+  font-size: 16px;
+  height: 20px;
+  line-height: 20px;
   margin: 5px 0;
 }
 </style>
