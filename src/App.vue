@@ -1,8 +1,14 @@
 <template lang="pug">
   .app
-    HotKey
-    Datepicker
-    FileUpload
+    .item
+      h1.title 1、快捷键
+      HotKey
+    .item
+      h1.title 2、时间选择器
+      Datepicker
+    .item
+      h1.title 3、文件上传(拖拽)
+      FileUpload
 </template>
 
 <script>
@@ -94,7 +100,6 @@ td {
   padding: 0;
   border: 0;
   outline: 0;
-  font-size: 100%;
   background: transparent;
 }
 
@@ -180,5 +185,20 @@ a {
 
 .hide {
   display: none;
+}
+.app {
+  width: auto;
+  margin: 20px;
+}
+.item {
+  width: 100%;
+  height: auto;
+  margin: 10px 0;
+}
+h1.title {
+  font-size: 20px;
+  height: 25px;
+  line-height: 25px;
+  margin: 5px 0;
 }
 </style>

@@ -25,7 +25,7 @@ export default {
      * @return undefined
      */
     inputFile: function (newFile, oldFile) {
-      console.log(newFile)
+      alert('文件上传成功')
     },
     /**
      * Pretreatment
@@ -38,6 +38,7 @@ export default {
       if (newFile && !oldFile) {
         // 过滤不是图片后缀的文件
         if (!/\.(jpeg|jpe|jpg|gif|png|webp)$/i.test(newFile.name)) {
+          alert('只能上传图片')
           return prevent()
         }
       }
@@ -53,7 +54,8 @@ export default {
 </script>
 <style lang="less" scoped>
   .fileupload {
-    height:400px;
+    width: 400px;
+    height:100px;
     background: #eeeeee;
     display: flex;
     justify-content: center;

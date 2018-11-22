@@ -1,7 +1,5 @@
 <template lang="pug">
-  .date
-    VueDatepickerLocal(v-model="time", rangeSeparator="至", format="YYYY年MM月DD日 HH:mm:ss", @confirm="confirm", show-buttons)
-
+    VueDatepickerLocal.date(v-model="time", rangeSeparator="至", format="YYYY年MM月DD日 HH:mm:ss", @confirm="confirm", show-buttons)
 </template>
 <script>
 import VueDatepickerLocal from 'vue-datepicker-local'
@@ -21,3 +19,9 @@ export default {
   }
 }
 </script>
+
+<style lang="less" scoped>
+  .date {
+    width: 400px;
+  }
+</style>
