@@ -26,6 +26,7 @@
     "pug": "^2.0.3",
     "pug-plain-loader": "^1.0.0",
     "v-hotkey-yyf": "^0.1.1",
+    "vue-drag-tree": "^1.1.0",
     "vue-template-compiler": "^2.5.17"
   },
   "eslintConfig": {

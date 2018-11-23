@@ -37,5 +37,6 @@ input {
   width: 100%;
   height: 25px;
   line-height: 25px;
+  border: 1px solid #dddddd;
 }
 </style>
